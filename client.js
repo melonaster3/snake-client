@@ -18,11 +18,14 @@ conn.on('connect', () => {
   conn.write("Hello from Name: SYL")
 })
 
+/*setInterval(() => {
+  conn.write("Move: up");
+},1000);
+*/
+
 conn.on('data',(data) => {
   console.log("Incoming data says :", data);
 }) 
-
-
   return conn;
 };
 
